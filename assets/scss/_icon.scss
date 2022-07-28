@@ -1,0 +1,80 @@
+.icon {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &.social-icon {
+    width: 24px;
+    height: 24px;
+
+    &.facebook-auth {
+      background-image: url("@/assets/images/icons/facebook-auth.svg");
+
+      &:hover {
+        background-image: url("@/assets/images/icons/facebook-auth-hover.svg");
+      }
+    }
+
+    &.tiktok-auth {
+      background-image: url("@/assets/images/icons/tiktok-auth.svg");
+
+      &:hover {
+        background-image: url("@/assets/images/icons/tiktok-auth-hover.svg");
+      }
+    }
+
+    &.discord-auth {
+      background-image: url("@/assets/images/icons/discord-auth.svg");
+
+      &:hover {
+        background-image: url("@/assets/images/icons/discord-auth-hover.svg");
+      }
+    }
+
+    &.google-auth {
+      background-image: url("@/assets/images/icons/google-auth.svg");
+
+      &:hover {
+        background-image: url("@/assets/images/icons/google-auth-hover.svg");
+      }
+    }
+
+    &.steam-auth {
+      background-image: url("@/assets/images/icons/steam-auth.svg");
+
+      &:hover {
+        background-image: url("@/assets/images/icons/steam-auth-hover.svg");
+      }
+    }
+  }
+
+  &.user {
+    width: 24px;
+    height: 24px;
+    background-image: url("@/assets/images/icons/user.svg");
+  }
+
+  &.lock {
+    width: 24px;
+    height: 24px;
+    background-image: url("@/assets/images/icons/lock.svg");
+  }
+
+  &.eye {
+    width: 24px;
+    height: 24px;
+    background-image: url("@/assets/images/icons/eye.svg");
+  }
+
+  &.arrow-right {
+    width: 18px;
+    height: 14px;
+    background-image: url("@/assets/images/icons/arrow-right.svg");
+  }
+
+  &.email {
+    width: 24px;
+    height: 24px;
+    background-image: url("@/assets/images/icons/email.svg");
+  }
+}

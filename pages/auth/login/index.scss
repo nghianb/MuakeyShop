@@ -1,0 +1,47 @@
+.login-page {
+  font-size: 16px;
+
+  &:before {
+    background-image: url("@/assets/images/bg-auth-content-sign-in.png");
+  }
+
+  .description {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 22px;
+    margin: 24px 0;
+    max-width: 269px;
+  }
+
+  .create-btn {
+    width: 172px;
+
+  }
+
+  .forgot-password-link {
+    color: #6B7AFF;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .input-group-control {
+    position: relative;
+
+    .input-group-append {
+      margin-right: 64px;
+    }
+
+    .login-btn {
+      background: linear-gradient(90deg, #4C5FFD -0.03%, #1841D3 100.03%);
+      border-radius: 4px;
+      width: 48px;
+      height: 48px;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: -1px;
+      right: 0;
+    }
+  }
+}

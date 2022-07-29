@@ -1,8 +1,10 @@
 .login-page {
   font-size: 16px;
 
-  &:before {
-    background-image: url("@/assets/images/bg-auth-content-sign-in.png");
+  .col-first {
+    &:before {
+      background-image: url("@/assets/images/bg-auth-content-sign-in.png");
+    }
   }
 
   .description {
@@ -14,7 +16,6 @@
 
   .create-btn {
     width: 172px;
-
   }
 
   .forgot-password-link {

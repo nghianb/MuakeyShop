@@ -1,33 +1,37 @@
 <div class='login-page auth-page'>
-  <div class='d-flex align-items-center justify-content-between h-100'>
-    <div class='w-50'>
-      <nuxtLink to='/' class='logo'></nuxtLink>
-      <div class='heading heading-24 mt-4'>Muakey, Mua Là Rẻ!</div>
-      <div class='description'>Lần đầu tiên ở đây? Tạo tài khoản của bạn để mua sắm trên Muakey.com</div>
-      <nuxtLink :to='{name: "auth-register"}' class='default-btn primary-btn create-btn'>Tạo tài khoản</nuxtLink>
-    </div>
-    <div class='w-50 col-right'>
-      <div class='heading heading-24'>Đăng Nhập</div>
-      <b-input-group class='input-group-control mt-4'>
-        <b-input-group-prepend>
-          <div class='icon user'></div>
-        </b-input-group-prepend>
-        <b-form-input class='input-control' placeholder='Email' />
-      </b-input-group>
-      <b-input-group class='input-group-control mt-12'>
-        <b-input-group-prepend>
-          <div class='icon lock'></div>
-        </b-input-group-prepend>
-        <b-form-input class='input-control' placeholder='Password' :type='inputPasswordType' />
-        <b-input-group-append class='align-items-center'>
-          <div class='icon pointer' :class='showPasswordIconClass' @click='toggleShowPassword'></div>
-          <b-button class='login-btn'>
-            <div class='icon arrow-right'></div>
-          </b-button>
-        </b-input-group-append>
-      </b-input-group>
-      <div class='forgot-password-link mt-4'>Quên mật khẩu?</div>
-      <social-login class='mt-48' />
-    </div>
-  </div>
+  <b-row class='row-cs h-100 align-items-center'>
+    <b-col order-md='2' md='6' class='col-second col-cs'>
+      <div class='col-content'>
+        <div class='heading heading-24'>Đăng Nhập</div>
+        <b-input-group class='input-group-control mt-4'>
+          <b-input-group-prepend>
+            <div class='icon user'></div>
+          </b-input-group-prepend>
+          <b-form-input class='input-control' placeholder='Email' />
+        </b-input-group>
+        <b-input-group class='input-group-control mt-12'>
+          <b-input-group-prepend>
+            <div class='icon lock'></div>
+          </b-input-group-prepend>
+          <b-form-input class='input-control' placeholder='Password' :type='inputPasswordType' />
+          <b-input-group-append class='align-items-center'>
+            <div class='icon pointer' :class='showPasswordIconClass' @click='toggleShowPassword'></div>
+            <b-button class='login-btn'>
+              <div class='icon arrow-right'></div>
+            </b-button>
+          </b-input-group-append>
+        </b-input-group>
+        <div class='forgot-password-link mt-4'>Quên mật khẩu?</div>
+        <social-login class='mt-48' />
+      </div>
+    </b-col>
+    <b-col order-md='1' md='6' class='col-first col-cs'>
+      <div class='col-content'>
+        <nuxtLink to='/' class='logo'></nuxtLink>
+        <div class='heading heading-24 mt-4'>Muakey, Mua Là Rẻ!</div>
+        <div class='description'>Lần đầu tiên ở đây? Tạo tài khoản của bạn để mua sắm trên Muakey.com</div>
+        <nuxtLink :to='{name: "auth-register"}' class='default-btn primary-btn create-btn'>Tạo tài khoản</nuxtLink>
+      </div>
+    </b-col>
+  </b-row>
 </div>

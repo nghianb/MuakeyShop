@@ -1,33 +1,38 @@
 <div class='register-page auth-page'>
-  <div class='d-flex align-items-center justify-content-between h-100'>
-    <div class='w-50'>
-      <div class='heading heading-18'>4 bước để đăng ký trở thành thành viên Muakey.com</div>
-      <div class='steps mt-4'>
-        <div class='step' step='1'>
-          <div class='step-description'>Đăng ký bằng email để nhận được email xác minh.</div>
-        </div>
-        <div class='step' step='2'>
-          <div class='step-description'>Nhấp vào liên kết xác minh trong email đã đăng ký.</div>
-        </div>
-        <div class='step' step='3'>
-          <div class='step-description'>Hoàn thành biểu mẫu đăng ký.</div>
-        </div>
-        <div class='step' step='4'>
-          <div class='step-description'>Bạn đã sẵn sàng, hãy bắt đầu tận hưởng mua sắm trong Muakey.com</div>
+  <b-row class='row-cs h-100 align-items-center'>
+    <b-col order-md='2' md='6' class='col-second col-cs'>
+      <div class='col-content'>
+        <div class='heading heading-24'>Đăng ký</div>
+        <div class='mt-2'>Đăng ký bằng email để nhận được email xác minh.</div>
+        <b-input-group class='input-group-control mt-4'>
+          <b-input-group-prepend>
+            <div class='icon email'></div>
+          </b-input-group-prepend>
+          <b-form-input class='input-control' placeholder='Email/Số điện thoại' />
+        </b-input-group>
+<!--        <div class='error-message'>Đăng ký lỗi</div>-->
+        <b-button class='default-btn primary-btn create-btn w-100 mt-4'>Gửi thư xác minh</b-button>
+        <social-login class='mt-4' />
+      </div>
+    </b-col>
+    <b-col order-md='1' md='6' class='col-first col-cs'>
+      <div class='col-content'>
+        <div class='heading heading-18'>4 bước để đăng ký trở thành thành viên Muakey.com</div>
+        <div class='steps mt-4'>
+          <div class='step active' step='1'>
+            <div class='step-description'>Đăng ký bằng email để nhận được email xác minh.</div>
+          </div>
+          <div class='step' step='2'>
+            <div class='step-description'>Nhấp vào liên kết xác minh trong email đã đăng ký.</div>
+          </div>
+          <div class='step' step='3'>
+            <div class='step-description'>Hoàn thành biểu mẫu đăng ký.</div>
+          </div>
+          <div class='step' step='4'>
+            <div class='step-description'>Bạn đã sẵn sàng, hãy bắt đầu tận hưởng mua sắm trong Muakey.com</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class='w-50 col-right'>
-      <div class='heading heading-24'>Đăng ký</div>
-      <div class='mt-2'>Đăng ký bằng email để nhận được email xác minh.</div>
-      <b-input-group class='input-group-control my-4'>
-        <b-input-group-prepend>
-          <div class='icon email'></div>
-        </b-input-group-prepend>
-        <b-form-input class='input-control' placeholder='Email/Số điện thoại' />
-      </b-input-group>
-      <b-button class='default-btn primary-btn create-btn w-100'>Gửi thư xác minh</b-button>
-      <social-login class='mt-4' />
-    </div>
-  </div>
+    </b-col>
+  </b-row>
 </div>

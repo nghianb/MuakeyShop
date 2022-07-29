@@ -2,8 +2,10 @@
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
 
-  &:before {
-    background-image: url("@/assets/images/bg-auth-content-sign-up.png");
+  .col-first {
+    &:before {
+      background-image: url("@/assets/images/bg-auth-content-sign-up.png");
+    }
   }
 
   .heading-18 {
@@ -14,6 +16,7 @@
     .step-description {
       max-width: 202px;
       margin-left: 12px;
+      line-height: 17px;
     }
 
     &[step] {
@@ -28,6 +31,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+
+      &.active {
+        &::before {
+          background: #6B7AFF;
+        }
       }
     }
 

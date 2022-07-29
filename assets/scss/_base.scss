@@ -7,6 +7,16 @@
   padding-right: 12px;
 }
 
+.row-cs {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.col-cs {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 a {
   color: inherit;
 
@@ -61,23 +71,35 @@ input:focus, button:focus {
 .auth-page {
   height: 100%;
   position: relative;
-  padding: 0 90px;
 
-  &:before {
-    content: '';
-    height: 100%;
-    width: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: 0;
+  .col-first {
+    &:before {
+      content: '';
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background-size: auto;
+      background-position: unset;
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+
+    .col-content {
+      position: relative;
+      z-index: 9;
+    }
   }
 
-  .col-right {
-    padding-left: 60px;
+  .col-second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col-content {
+    width: 100%;
+    padding: 48px 36px;
   }
 }
 
@@ -100,6 +122,13 @@ input:focus, button:focus {
   &.primary-btn {
     background: linear-gradient(90deg, #4C5FFD -0.03%, #1841D3 100.03%);
   }
+}
+
+.error-message {
+  font-size: 12px;
+  line-height: 17px;
+  color: #FE5252;
+  margin-top: 4px;
 }
 
 .heading {
@@ -129,5 +158,36 @@ input:focus, button:focus {
   .container {
     width: 1224px;
     max-width: 1224px;
+  }
+  .auth-page {
+    height: 100%;
+    position: relative;
+
+    .col-first {
+      padding-left: 102px;
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      &:before {
+        width: calc(100% - 12px);
+        left: 12px;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    .col-second {
+      padding-left: 60px;
+      padding-right: 102px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .col-content {
+      padding: 0;
+    }
   }
 }

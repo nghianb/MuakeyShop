@@ -13,7 +13,7 @@ export default {
   },
   computed: {
     showPasswordIconClass() {
-      if (this.isShowPassword) return 'eye'
+      if (this.isShowPassword) return 'eye-slash'
       return 'eye'
     },
     inputPasswordType() {

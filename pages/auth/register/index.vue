@@ -1,10 +1,11 @@
 <template src='./index.html'></template>
 <script>
-import SocialLogin from '../../../components/social-login/socialLogin'
+import SocialLogin from '../../../components/pages/social-login/SocialLogin'
+import RegisterSteps from '../../../components/pages/register-steps/RegisterSteps'
 
 export default {
-  name: 'LoginPage',
-  components: { SocialLogin },
+  name: 'RegisterPage',
+  components: { SocialLogin, RegisterSteps },
   layout: 'auth',
   data: () => {
     return {
@@ -24,6 +25,9 @@ export default {
   methods: {
     toggleShowPassword() {
       this.isShowPassword = !this.isShowPassword
+    },
+    onSubmit() {
+      this.$router.push({ name: 'auth-register-verify' })
     }
   }
 }

@@ -83,4 +83,30 @@
     height: 24px;
     background-image: url("@/assets/images/icons/eye-slash.svg");
   }
+
+  &.email-arrow-right {
+    width: 24px;
+    height: 24px;
+    background-image: url("@/assets/images/icons/email-arrow-right.svg");
+  }
+
+  &.email-complete {
+    width: 24px;
+    height: 24px;
+    background-image: url("@/assets/images/icons/email-complete.svg");
+  }
+
+  &.rules-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url("@/assets/images/icons/check-circle.svg");
+
+    &.valid {
+      background-image: url("@/assets/images/icons/check-circle-success.svg");
+    }
+
+    &.invalid {
+      background-image: url("@/assets/images/icons/exclamation.svg");
+    }
+  }
 }

@@ -1,10 +1,11 @@
 <template src='./index.html'></template>
 <script>
-import SocialLogin from '../../../components/pages/social-login/SocialLogin'
+import RegisterSteps from '../../../../components/pages/register-steps/RegisterSteps'
+import ValidationRules from '../../../../components/pages/rules/ValidationRules'
 
 export default {
-  name: 'LoginPage',
-  components: { SocialLogin },
+  name: 'RegisterCompletePage',
+  components: { RegisterSteps, ValidationRules },
   layout: 'auth',
   data: () => {
     return {
@@ -24,7 +25,7 @@ export default {
   methods: {
     toggleShowPassword() {
       this.isShowPassword = !this.isShowPassword
-    }
+    },
   }
 }
 </script>

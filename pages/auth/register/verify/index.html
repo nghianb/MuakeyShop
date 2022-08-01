@@ -1,0 +1,25 @@
+<div class='register-page auth-page register-verify-page'>
+  <b-row class='row-cs h-100 align-items-center'>
+    <b-col order-md='2' md='6' class='col-second col-cs'>
+      <div class='col-content'>
+        <div class='heading heading-24'>Chúng tôi đã gửi email xác nhận đến bạn</div>
+        <b-input-group class='input-group-control mt-4'>
+          <b-input-group-prepend>
+            <div class='icon email-arrow-right'></div>
+          </b-input-group-prepend>
+          <div class='input-control'>abc@gmail.com</div>
+        </b-input-group>
+        <div class='mt-4 description'>
+          Click vào link ở email xác nhận để hoàn thành quá trình. Vui lòng kiểm tra <span>THƯ RÁC</span> hoặc <span>SPAM</span>
+          nếu bạn không tìm thấy ở <span>HỘP THƯ ĐẾN</span>.
+        </div>
+        <b-button class='default-btn primary-btn create-btn w-100 mt-4'>Kiểm tra mail</b-button>
+      </div>
+    </b-col>
+    <b-col order-md='1' md='6' class='col-first col-cs'>
+      <div class='col-content'>
+        <register-steps :current-step='2' />
+      </div>
+    </b-col>
+  </b-row>
+</div>

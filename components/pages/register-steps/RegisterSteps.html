@@ -1,0 +1,8 @@
+<div class='register-steps'>
+  <div class='heading heading-18'>4 bước để đăng ký trở thành thành viên Muakey.com</div>
+  <div class='steps mt-4'>
+    <div v-for='step in steps' class='step' :step='step.key' :class='step.key <= currentStep ? "active" : ""'>
+      <div class='step-description'>{{ step.value }}</div>
+    </div>
+  </div>
+</div>

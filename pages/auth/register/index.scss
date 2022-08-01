@@ -7,41 +7,4 @@
       background-image: url("@/assets/images/bg-auth-content-sign-up.png");
     }
   }
-
-  .heading-18 {
-    max-width: 269px;
-  }
-
-  .step {
-    .step-description {
-      max-width: 202px;
-      margin-left: 12px;
-      line-height: 17px;
-    }
-
-    &[step] {
-      display: flex;
-
-      &::before {
-        content: attr(step) " ";
-        width: 24px;
-        height: 24px;
-        background: rgba(255, 255, 255, 0.12);
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      &.active {
-        &::before {
-          background: #6B7AFF;
-        }
-      }
-    }
-
-    & + .step {
-      margin-top: 12px;
-    }
-  }
 }

@@ -1,0 +1,26 @@
+.rules {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+
+  .icon {
+    margin-right: 4px;
+
+    &.valid {
+      & ~ .message {
+        color: #2DB517;
+      }
+    }
+
+    &.invalid {
+      & ~ .message {
+        color: #FE5252;
+      }
+    }
+  }
+
+  .message {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}

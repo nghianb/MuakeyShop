@@ -21,6 +21,7 @@ a {
   color: inherit;
 
   &:hover {
+    color: inherit;
     text-decoration: none;
   }
 }
@@ -158,6 +159,32 @@ input:focus, button:focus {
   line-height: 17px;
   color: #FE5252;
   margin-top: 4px;
+}
+
+.carousel-customize {
+  .carousel-caption {
+    position: unset;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &.carousel-no-image {
+    .carousel-item {
+      & > img {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  &.line-clamp-1 {
+    -webkit-line-clamp: 1;
+  }
 }
 
 .heading {

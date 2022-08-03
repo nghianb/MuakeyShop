@@ -1,0 +1,41 @@
+.header {
+  background: #13112E;
+
+  &-carousel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 0;
+
+      &-left {
+        display: flex;
+        align-items: center;
+
+        .image {
+          margin-right: 10px;
+        }
+
+        .text {
+          width: 688px;
+          max-width: 100%;
+          text-align: left;
+        }
+      }
+
+      &-right {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+
+        .icon {
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}

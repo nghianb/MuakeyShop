@@ -1,0 +1,51 @@
+<div class='header'>
+  <b-carousel
+    class='carousel-customize carousel-no-image header-carousel'
+    :interval='3000'
+    background='linear-gradient(90deg, #4C5FFD -0.03%, #1841D3 100.03%)'
+  >
+    <b-carousel-slide v-for='i in 5' :key='i' img-blank>
+      <div class='header-carousel-item'>
+        <div class='header-carousel-item-left'>
+          <div class='image'>
+            <img src='@/assets/images/uploads/header-slider-icon.png' alt=''>
+          </div>
+          <div class='text line-clamp line-clamp-1'>We use cookies to improve your experience on DMarket as described in
+            our Privacy Policy.
+          </div>
+        </div>
+        <a href='#' class='header-carousel-item-right'>
+          <div>MUA NGAY</div>
+          <div class='icon chevron-right'></div>
+        </a>
+      </div>
+    </b-carousel-slide>
+  </b-carousel>
+  <div class='container'>
+    <nuxtLink to='/' class='logo'></nuxtLink>
+    <div class='header-search'>
+      <b-input-group>
+        <b-input-group-prepend>
+          <b-dropdown class="m-2" no-caret>
+            <template #button-content>
+              <div class='d-flex'>
+                <div>All</div>
+                <div class='icon chevron-down-bold'></div>
+              </div>
+            </template>
+            <b-dropdown-item-button>I'm a button</b-dropdown-item-button>
+            <b-dropdown-item-button active>I'm a active button</b-dropdown-item-button>
+            <b-dropdown-item-button disabled>I'm a button, but disabled!</b-dropdown-item-button>
+            <b-dropdown-item-button>I don't look like a button, but I am!</b-dropdown-item-button>
+          </b-dropdown>
+        </b-input-group-prepend>
+        <b-form-input placeholder='Tìm kiếm Skins...' />
+        <b-input-group-append class='align-items-center'>
+          <b-button class='search-btn'>
+            Tìm kiếm
+          </b-button>
+        </b-input-group-append>
+      </b-input-group>
+    </div>
+  </div>
+</div>

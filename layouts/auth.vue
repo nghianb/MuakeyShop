@@ -110,7 +110,6 @@ export default {
         width: 304px;
         bottom: -84px;
         right: -184px;
-        z-index: 9;
       }
     }
 
